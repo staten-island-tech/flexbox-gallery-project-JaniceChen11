@@ -9,20 +9,8 @@ body,
 .parent {
   font-size: 30px;
   display: flex;
-  justify-content: space-between;
 }
-.child {
+.child{
   border: 1px solid red;
   width: 28%;
-}
-.child-1{
-border: 3px solid green;
-height: 300px;
-}
-.child-2{
-  border: 3px solid yellowgreen
-}
-.child-3{
-  border: 3px solid blue
-  
 }
