@@ -6,11 +6,3 @@ body,
   box-sizing: border-box;
   font-size: 62.5%;
 }
-.parent {
-  font-size: 30px;
-  display: flex;
-}
-.child{
-  border: 1px solid red;
-  width: 28%;
-}
