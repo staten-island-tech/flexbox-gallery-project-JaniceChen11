@@ -3,23 +3,27 @@ body,
 * {
   padding: 0;
   margin: 0;
-  font-size: 62.5%;
+  font-size: 100%;
   background-color: #b3e5fc;
 }
 
 .gallery {
-  height: 50%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  margin-right: 10%;
-  margin-left: 25%;
-  justify-content: space;
+  margin-right: auto;
+  margin-left: auto;
   align-items: center;
+  padding-top: 5%;
+  text-align: center;
 }
-.gallery-posts {
-  width: 32%;
-  border-radius: 10%;
-  border: 5% solid red;
+.gallery-img {
+  width: 25%;
   box-sizing: border-box;
+  border-radius: 5%;
+  padding: 1.5%;
+  background-color: pink
+}
+h2{
+  color: white;
 }
