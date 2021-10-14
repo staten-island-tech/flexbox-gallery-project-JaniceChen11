@@ -3,11 +3,15 @@ body,
 * {
   padding: 0;
   margin: 0;
-  font-size: 100%;
-  background-color: #b3e5fc;
+  font-size: 16.5;
+  background-color: white;
   
 }
-
+.title {
+  color: aliceblue;
+  text-align: center;
+  font-size: 10rem
+}
 .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -19,6 +23,7 @@ body,
   text-align: center;
   align-content: center;
 }
+
 .gallery-img {
   width: 75%;
   box-sizing: border-box;
@@ -26,10 +31,14 @@ body,
   padding: 1.5%;
   background-color: pink;
   box-shadow: 10px 5px 5px white;
+  transition: all 0.3s ease-in-out;
 }
 h2{
   color: white;
 }
 .gallery-posts{
 width: 30%;
+}
+.gallery-img:hover { 
+transform: scale(1.5);
 }
