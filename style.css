@@ -9,8 +9,9 @@ body,
 .title {
   color: white;
   text-align: center;
-  font-size: 7rem;
+  font-size: 5rem;
   font-family: "Roboto", sans-serif;
+  margin-top: 4rem;
 }
 .gallery {
   display: flex;
@@ -35,6 +36,7 @@ img {
 }
 h2 {
   color: white;
+  padding-top: 1rem;
   font-size: 2.5rem;
 }
 .gallery-posts {
@@ -50,11 +52,9 @@ h2 {
   -webkit-transition-property: transform;
   transition-property: transform;
 }
-.post-one:hover,
-.post-one:focus,
-.post-one:active {
-  -webkit-transform: rotate(4deg);
-  transform: rotate(4deg);
+.post-one:hover, .post-one:focus, .post-one:active {
+  -webkit-transform: translateX(-8rem);
+  transform: translateX(-8rem);
 }
 .post-two {
   display: inline-block;
@@ -84,11 +84,9 @@ h2 {
   -webkit-transition-property: transform;
   transition-property: transform;
 }
-.post-three:hover,
-.post-three:focus,
-.post-three:active {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+.post-three:hover, .post-three:focus, .post-three:active {
+  -webkit-transform: translateX(8rem);
+  transform: translateX(8rem);
 }
 .post-four {
   display: inline-block;
@@ -145,11 +143,12 @@ h2 {
   -webkit-transition-property: transform;
   transition-property: transform;
 }
-.post-seven:hover, .post-seven:focus, .post-seven:active {
-  -webkit-transform: translateX(-8rem);
-  transform: translateX(-8rem);
+.post-seven:hover,
+.post-seven:focus,
+.post-seven:active {
+  -webkit-transform: rotate(4deg);
+  transform: rotate(4deg);
 }
-/* Forward */
 .post-eight {
   display: inline-block;
   vertical-align: middle;
@@ -160,9 +159,11 @@ h2 {
   -webkit-transition-property: transform;
   transition-property: transform;
 }
-.post-eight:hover, .post-eight:focus, .post-eight:active {
-  -webkit-transform: translateX(8rem);
-  transform: translateX(8rem);
+.post-eight:hover,
+.post-eight:focus,
+.post-eight:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 @-webkit-keyframes post-nine {
   16.65% {
@@ -232,10 +233,11 @@ h2 {
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
 }
+
 .animation {
-  height: 5rem;
-  animation: opening-animation 8s infinite;
-  width: 5rem;
+  height: 2rem;
+  animation: opening-animation 6s;
+  width: 2rem;
   position: fixed;
 }
 @keyframes opening-animation {
@@ -253,20 +255,20 @@ h2 {
   }
   50%{
     left: 55%;
-    bottom: 10%;
+    bottom: 20%;
     transform: scale(4);
     background-color: plum;
   }
   75%{
     left: 55%;
-    bottom: 10%;
+    bottom: 20%;
     transform: scale(5);
     background-color: palegoldenrod;
   }
   100%{
     left: 50%;
     bottom: 10%;
-    transform: scale(6);
+    transform: scale(1);
     background-color: pink;
   }
 }
