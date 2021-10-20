@@ -11,8 +11,9 @@ body,
   text-align: center;
   font-size: 5rem;
   font-family: "Roboto", sans-serif;
-  margin-top: 4rem;
+  padding-top: 3rem;
 }
+
 .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -32,11 +33,11 @@ img {
   border-radius: 8%;
   padding: 1.5%;
   background-color: pink;
-  box-shadow: 10px 10px white;
+  box-shadow: 1rem 0.625rem grey;
 }
 h2 {
   color: white;
-  padding-top: 1rem;
+  padding: 1rem;
   font-size: 2.5rem;
 }
 .gallery-posts {
@@ -52,9 +53,11 @@ h2 {
   -webkit-transition-property: transform;
   transition-property: transform;
 }
-.post-one:hover, .post-one:focus, .post-one:active {
-  -webkit-transform: translateX(-8rem);
-  transform: translateX(-8rem);
+.post-one:hover,
+.post-one:focus,
+.post-one:active {
+  -webkit-transform: translateX(-2rem);
+  transform: translateX(-2rem);
 }
 .post-two {
   display: inline-block;
@@ -71,8 +74,8 @@ h2 {
 .post-two:hover,
 .post-two:focus,
 .post-two:active {
-  -webkit-transform: translateY(-8rem);
-  transform: translateY(-8rem);
+  -webkit-transform: translateY(-2rem);
+  transform: translateY(-2rem);
 }
 .post-three {
   display: inline-block;
@@ -84,9 +87,11 @@ h2 {
   -webkit-transition-property: transform;
   transition-property: transform;
 }
-.post-three:hover, .post-three:focus, .post-three:active {
-  -webkit-transform: translateX(8rem);
-  transform: translateX(8rem);
+.post-three:hover,
+.post-three:focus,
+.post-three:active {
+  -webkit-transform: translateX(2rem);
+  transform: translateX(2rem);
 }
 .post-four {
   display: inline-block;
@@ -96,12 +101,14 @@ h2 {
   -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
-.post-four:hover, .post-four:focus, .post-four:active {
+.post-four:hover,
+.post-four:focus,
+.post-four:active {
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
   -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
   transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
-  transition-timing-function: cubic
+  transition-timing-function: cubic;
 }
 .post-five {
   display: inline-block;
@@ -115,9 +122,11 @@ h2 {
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-.post-five:hover, .post-five:focus, .post-five:active {
-  -webkit-transform: translateY(8rem);
-  transform: translateY(8rem);
+.post-five:hover,
+.post-five:focus,
+.post-five:active {
+  -webkit-transform: translateY(2rem);
+  transform: translateY(2rem);
 }
 .post-six {
   display: inline-block;
@@ -129,7 +138,9 @@ h2 {
   -webkit-transition-property: transform;
   transition-property: transform;
 }
-.post-six:hover, .post-six:focus, .post-six:active {
+.post-six:hover,
+.post-six:focus,
+.post-six:active {
   -webkit-transform: skew(-10deg);
   transform: skew(-10deg);
 }
@@ -146,8 +157,8 @@ h2 {
 .post-seven:hover,
 .post-seven:focus,
 .post-seven:active {
-  -webkit-transform: rotate(4deg);
-  transform: rotate(4deg);
+  -webkit-transform: rotate(10deg);
+  transform: rotate(10deg);
 }
 .post-eight {
   display: inline-block;
@@ -223,7 +234,9 @@ h2 {
   -webkit-transform: perspective(1rem) translateZ(0);
   transform: perspective(1rem) translateZ(0);
 }
-.post-nine:hover, .post-nine:focus, .post-nine:active {
+.post-nine:hover,
+.post-nine:focus,
+.post-nine:active {
   -webkit-animation-name: post-nine;
   animation-name: post-nine;
   -webkit-animation-duration: 1s;
@@ -236,39 +249,39 @@ h2 {
 
 .animation {
   height: 2rem;
-  animation: opening-animation 6s;
+  animation: opening-animation 5s;
   width: 2rem;
   position: fixed;
 }
 @keyframes opening-animation {
-  0%{
+  0% {
     left: 50%;
-    bottom: 10%;
-    transform: scale(2);
-    background-color: pink;
+    bottom: 50%;
+    transform: scale(7.5);
+    background-color: red;
   }
-  25%{
+  25% {
+    right: 50%;
+    bottom: 50%;
+    transform: scale(10);
+    background-color: yellow;
+  }
+  50% {
+    left: 60%;
+    bottom: 55%;
+    transform: scale(12.5);
+    background-color: green;
+  }
+  75% {
+    right: 60%;
+    bottom: 55%;
+    transform: scale(15);
+    background-color: blue;
+  }
+  100% {
     left: 50%;
-    bottom: 20%;
-    transform: scale(3);
-    background-color: paleturquoise;
-  }
-  50%{
-    left: 55%;
-    bottom: 20%;
-    transform: scale(4);
-    background-color: plum;
-  }
-  75%{
-    left: 55%;
-    bottom: 20%;
-    transform: scale(5);
-    background-color: palegoldenrod;
-  }
-  100%{
-    left: 50%;
-    bottom: 10%;
+    bottom: 50%;
     transform: scale(1);
-    background-color: pink;
+    background-color: purple;
   }
 }
