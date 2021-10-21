@@ -3,15 +3,16 @@ body,
 * {
   padding: 0;
   margin: 0;
-  font-size: 16.5;
+  font-size: 62.5;
   background-color: #b3e5fc;
+  box-sizing: border-box;
 }
 .title {
   color: white;
   text-align: center;
-  font-size: 5rem;
+  font-size: 1rem;
   font-family: "Roboto", sans-serif;
-  padding-top: 3rem;
+  padding-top: 1rem;
 }
 
 .gallery {
@@ -33,12 +34,12 @@ img {
   border-radius: 8%;
   padding: 1.5%;
   background-color: pink;
-  box-shadow: 1rem 0.625rem grey;
+  box-shadow: 0.625rem 1rem grey;
 }
 h2 {
   color: white;
   padding: 1rem;
-  font-size: 2.5rem;
+  font-size: 0.5rem;
 }
 .gallery-posts {
   width: 30%;
@@ -46,162 +47,103 @@ h2 {
 .post-one {
   display: inline-block;
   vertical-align: middle;
-  -webkit-transform: perspective(1rem) translateZ(0);
   transform: perspective(1rem) translateZ(0);
-  -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
-  -webkit-transition-property: transform;
   transition-property: transform;
 }
 .post-one:hover,
 .post-one:focus,
 .post-one:active {
-  -webkit-transform: translateX(-2rem);
   transform: translateX(-2rem);
 }
 .post-two {
   display: inline-block;
   vertical-align: middle;
-  -webkit-transform: perspective(1rem) translateZ(0);
   transform: perspective(1rem) translateZ(0);
-  -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
-  -webkit-transition-property: transform;
   transition-property: transform;
-  -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
 .post-two:hover,
 .post-two:focus,
 .post-two:active {
-  -webkit-transform: translateY(-2rem);
   transform: translateY(-2rem);
 }
 .post-three {
   display: inline-block;
   vertical-align: middle;
-  -webkit-transform: perspective(1rem) translateZ(0);
   transform: perspective(1rem) translateZ(0);
-  -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
-  -webkit-transition-property: transform;
   transition-property: transform;
 }
 .post-three:hover,
 .post-three:focus,
 .post-three:active {
-  -webkit-transform: translateX(2rem);
   transform: translateX(2rem);
 }
 .post-four {
   display: inline-block;
   vertical-align: middle;
-  -webkit-transform: perspective(1rem) translateZ(0);
   transform: perspective(1rem) translateZ(0);
-  -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
 .post-four:hover,
 .post-four:focus,
 .post-four:active {
-  -webkit-transform: scale(1.2);
   transform: scale(1.2);
-  -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
   transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
   transition-timing-function: cubic;
 }
 .post-five {
   display: inline-block;
   vertical-align: middle;
-  -webkit-transform: perspective(1rem) translateZ(0);
   transform: perspective(1rem) translateZ(0);
-  -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
-  -webkit-transition-property: transform;
   transition-property: transform;
-  -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
 .post-five:hover,
 .post-five:focus,
 .post-five:active {
-  -webkit-transform: translateY(2rem);
   transform: translateY(2rem);
 }
 .post-six {
   display: inline-block;
   vertical-align: middle;
-  -webkit-transform: perspective(1rem) translateZ(0);
   transform: perspective(1rem) translateZ(0);
-  -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
-  -webkit-transition-property: transform;
   transition-property: transform;
 }
 .post-six:hover,
 .post-six:focus,
 .post-six:active {
-  -webkit-transform: skew(-10deg);
   transform: skew(-10deg);
 }
 .post-seven {
   display: inline-block;
   vertical-align: middle;
-  -webkit-transform: perspective(1rem) translateZ(0);
   transform: perspective(1rem) translateZ(0);
-  -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
-  -webkit-transition-property: transform;
   transition-property: transform;
 }
 .post-seven:hover,
 .post-seven:focus,
 .post-seven:active {
-  -webkit-transform: rotate(10deg);
   transform: rotate(10deg);
 }
 .post-eight {
   display: inline-block;
   vertical-align: middle;
-  -webkit-transform: perspective(1rem) translateZ(0);
   transform: perspective(1rem) translateZ(0);
-  -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
-  -webkit-transition-property: transform;
   transition-property: transform;
 }
 .post-eight:hover,
 .post-eight:focus,
 .post-eight:active {
-  -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
-@-webkit-keyframes post-nine {
-  16.65% {
-    -webkit-transform: skew(-12deg);
-    transform: skew(-12deg);
-  }
-  33.3% {
-    -webkit-transform: skew(10deg);
-    transform: skew(10deg);
-  }
-  49.95% {
-    -webkit-transform: skew(-6deg);
-    transform: skew(-6deg);
-  }
-  66.6% {
-    -webkit-transform: skew(4deg);
-    transform: skew(4deg);
-  }
-  83.25% {
-    -webkit-transform: skew(-2deg);
-    transform: skew(-2deg);
-  }
-  100% {
-    -webkit-transform: skew(0);
-    transform: skew(0);
-  }
-}
+
 @keyframes post-nine {
   16.65% {
     -webkit-transform: skew(-12deg);
@@ -231,19 +173,14 @@ h2 {
 .post-nine {
   display: inline-block;
   vertical-align: middle;
-  -webkit-transform: perspective(1rem) translateZ(0);
   transform: perspective(1rem) translateZ(0);
 }
 .post-nine:hover,
 .post-nine:focus,
 .post-nine:active {
-  -webkit-animation-name: post-nine;
   animation-name: post-nine;
-  -webkit-animation-duration: 1s;
   animation-duration: 1s;
-  -webkit-animation-timing-function: ease-in-out;
   animation-timing-function: ease-in-out;
-  -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
 }
 
@@ -257,31 +194,40 @@ h2 {
   0% {
     left: 50%;
     bottom: 50%;
-    transform: scale(7.5);
+    transform: scale(3);
     background-color: red;
   }
   25% {
     right: 50%;
     bottom: 50%;
-    transform: scale(10);
+    transform: scale(4);
     background-color: yellow;
   }
   50% {
     left: 60%;
     bottom: 55%;
-    transform: scale(12.5);
+    transform: scale(5);
     background-color: green;
   }
   75% {
     right: 60%;
     bottom: 55%;
-    transform: scale(15);
+    transform: scale(6);
     background-color: blue;
   }
   100% {
     left: 50%;
     bottom: 50%;
-    transform: scale(1);
+    transform: scale(2);
     background-color: purple;
+  }
+}
+
+@media screen and (max-width:800px){
+ 
+}
+@media screen and (max-width:600px){
+  body{
+    background-color: red;
   }
 }
