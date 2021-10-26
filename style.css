@@ -218,32 +218,35 @@ h2 {
 }
 
 @media screen and (max-width: 800px) {
-  .gallery {
+img{
     flex-direction: column;
-    max-width: 100%;
-    position: relative;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 600%;
+    position: center;
+    margin-left: 10%;
   }
   .title {
     flex-direction: column;
     max-width: 100%;
-    position: center;
   }
 }
-@media screen and (max-width: 600px) {
-  .gallery {
-    flex-direction: column;
-    max-width: 100%;
-    position: relative;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .title {
-    flex-direction: column;
-    max-width: 100%;
-    position: relative;
+@media screen and (max-width: 400px) {
+  img{
+      width: 300px;
+    }
+    .gallery{
+      flex-direction: column;
+      margin-left: -10%;
+    }
+    .gallery-posts{
+      margin-left: -80%;
+      margin-right: -30%;
+    }
+
+    .title {
+      width: 375%
+    }
+ .gallery-header{
+   text-align: center;
+ font-size: 1rem;
   }
 }
