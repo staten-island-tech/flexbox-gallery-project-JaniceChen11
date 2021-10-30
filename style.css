@@ -24,6 +24,7 @@ body,
   padding-top: 5%;
   text-align: center;
   align-content: center;
+  display: row-block;
   font-family: "Roboto", sans-serif;
 }
 
@@ -37,12 +38,13 @@ img {
 }
 h2 {
   color: pink;
-  padding: 1rem;
+  padding: 25%;
   font-size: 0.5rem;
   position: relative;
 }
 .gallery-posts {
   width: 30%;
+  
 }
 .post-one {
   display: inline-block;
@@ -218,35 +220,43 @@ h2 {
 }
 
 @media screen and (max-width: 800px) {
-img{
-    flex-direction: column;
-    max-width: 600%;
-    position: center;
-    margin-left: 10%;
+  img {
+    margin: 10%;
+    width: 2.5rem;
   }
   .title {
-    flex-direction: column;
-    max-width: 100%;
+   align-content: center;
   }
-}
+  .gallery {
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+  }
+  .gallery-header{
+    font-size: 50%
+  }
+  }
 @media screen and (max-width: 400px) {
-  img{
-      width: 300px;
-    }
-    .gallery{
-      flex-direction: column;
-      margin-left: -10%;
-    }
-    .gallery-posts{
-      margin-left: -80%;
-      margin-right: -30%;
-    }
+  img {
+    width: 5rem;
+    align-content: flex-start;
+    
+  }
+  .gallery {
+    flex-direction: column;
+    display: block;
+    flex: 1;
+    align-content: center;
+    text-align: center;
+    margin-left: auto;
+  }
 
-    .title {
-      width: 375%
-    }
- .gallery-header{
-   text-align: center;
- font-size: 1rem;
+  .title {
+    width: 50%;
+   margin-left: 25%;
+  }
+  .gallery-header {
+    width: 50%;
+    margin-left: 75%;
   }
 }
